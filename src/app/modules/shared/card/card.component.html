@@ -1,0 +1,11 @@
+<div *ngIf="gist" class="mt-4 card" style="width: 18rem; height: 80%; cursor: pointer;">
+  <div class="card-header">
+    {{getDescription()}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{gist.id}}</h5>
+    <div class="card-text">
+      <app-badge [languages]="languages"></app-badge>
+    </div>
+  </div>
+</div>

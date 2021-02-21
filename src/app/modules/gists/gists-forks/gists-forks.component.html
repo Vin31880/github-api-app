@@ -1,0 +1,27 @@
+<div>
+  <div class="d-flex">
+    <h5>Gists Fork Details</h5>
+  </div>
+  <hr>
+  <div>
+    <div class="mt-4 card">
+      <div class="card-header">
+        {{gistId}}
+      </div>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <div class="card-text">
+          <ul *ngIf="forkList.length > 0">
+            <li *ngFor="let item of forkList" class="mt-3">
+              <img src="{{item.owner.avatar_url}}" style="height: 25px; width: 25px">
+              <span class="ml-2">{{item.owner.login}}</span>
+            </li>
+          </ul>
+          <span *ngIf="forkList.length === 0" class="text-warning">No forks found for gist id&nbsp; {{gistId}}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
