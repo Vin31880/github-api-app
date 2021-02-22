@@ -13,4 +13,7 @@
       <app-card [gist]="gist" (click)="navigateToForkDetails(gist.id)"></app-card>
     </div>
   </div>
+  <div>
+    <span *ngIf="!gists || gists.length === 0" class="text-warning">No gist found for username&nbsp; {{gistUserName}}</span>
+  </div>
 </div>
