@@ -11,3 +11,5 @@ GitHub API App created using Angular Framework and covers following usecases
 
 * Add Pagination for list of gists
 * User interface can be improved
+* Error/ warning messages can be added
+* Loader can be added
